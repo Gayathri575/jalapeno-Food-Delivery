@@ -1,0 +1,44 @@
+
+/* General Styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f9fff8; 
+}
+
+.header, 
+.explore-menu, 
+.food-display, 
+.app-download {
+    width: 100%;
+    max-width: 1200px;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+/* Spacing Between Sections */
+.explore-menu {
+    margin-top: 20px;
+}
+
+.food-display {
+    margin-top: 30px;
+}
+
+.app-download {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+    .header, 
+    .explore-menu, 
+    .food-display, 
+    .app-download {
+        width: 90%;  /* Adjust width for small screens */
+        padding: 10px;
+    }
+}

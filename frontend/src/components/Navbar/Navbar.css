@@ -1,0 +1,174 @@
+/* 🌟 Global Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  /* 🌟 Navbar Search Styles */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .search-icon {
+    color: #1a5d0c; /* Jalapeño Green */
+  }
+  
+  .search-box {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .search-results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1002;
+  }
+  
+  .search-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .search-item-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  /* 🌟 Navbar Cart and Dropdown Section */
+  .cart-dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-icon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 50%;
+  }
+  
+  /* 🌟 Dropdown Button */
+  .dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 🌟 Dropdown Menu Styles */
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    background-color: #1a5d0c; /* Jalapeño Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: none;
+  }
+  
+  .dropdown-menu.open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Dropdown Item */
+  .dropdown-item {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 6px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #49557E; /* Darker background on hover */
+    color: #fff;
+  }
+  
+  /* 🌟 Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-search {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .cart-dropdown-container {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .dropdown-menu {
+      right: auto;
+      left: 0;
+      width: 100%;
+    }
+  }
+  

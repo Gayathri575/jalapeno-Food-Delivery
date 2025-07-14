@@ -1,0 +1,121 @@
+/* 🌟 Login Popup Container */
+.login-popup {
+    position: fixed;  /* Ensures it covers the full screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures popup stays on top */
+}
+
+/* 🌟 Popup Form */
+.login-popup-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    text-align: center;
+}
+
+/* 🌟 Title & Close Button */
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-popup-title h2 {
+    color: #1a5d0c; /* Jalapeño Green */
+    font-size: 24px;
+    margin: 0;
+}
+
+.login-popup-title img {
+    width: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-popup-title img:hover {
+    transform: scale(1.1);
+}
+
+/* 🌟 Input Fields */
+.login-popup-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🌟 Login Button */
+.login-popup-container button {
+    width: 100%;
+    background: #1a5d0c;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-popup-container button:hover {
+    background: #155a0c; /* Slightly darker green */
+}
+
+/* 🌟 Terms & Conditions */
+.login-popup-condition {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-popup-condition input {
+    margin-right: 8px;
+}
+
+/* 🌟 Switch Between Login & Sign Up */
+.login-popup-container p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-popup-container p span {
+    color: #1a5d0c;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-popup-container p span:hover {
+    text-decoration: underline;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 600px) {
+    .login-popup-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-popup-title h2 {
+        font-size: 20px;
+    }
+
+    .login-popup-container button {
+        font-size: 16px;
+    }
+}

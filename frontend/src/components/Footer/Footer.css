@@ -1,0 +1,192 @@
+/* 🌟 Footer General Styles */
+.footer {
+    background-color: #1a5d0c; /* Jalapeño green */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* 🌟 Footer Content Layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10%;
+    align-items: flex-start;
+}
+
+/* 🌟 Left Section */
+.footer-content-left {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.jhead {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-content-left p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-social-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* 🌟 Center Section */
+.footer-content-center {
+    flex: 1;
+    max-width: 250px;
+    text-align: left;
+}
+
+.footer-content-center h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content-center ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content-center ul li {
+    margin: 10px 0;
+}
+
+.footer-content-center ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-content-center ul li a:hover {
+    color: #f9a825;
+}
+
+/* 🌟 Right Section */
+.footer-content-right {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-content-right h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content-right ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer-content-right ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content-right .whats-new {
+    background-color: #f9a825; /* Highlighted background for What's New */
+    color: #1a5d0c; /* Contrast text color */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-content-right .whats-new:hover {
+    transform: scale(1.05); /* Slightly enlarges when hovered */
+    background-color: #ffca28; /* Lighter shade on hover */
+}
+
+.footer-content-right .whats-new h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content-right .whats-new p {
+    font-size: 14px;
+}
+
+/* 🌟 Footer Bottom */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    margin: 30px 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+/* 🌟 Footer Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content-left, .footer-content-center, .footer-content-right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+
+    .footer-content-center ul li {
+        font-size: 14px;
+    }
+
+    .footer-content-right ul li {
+        font-size: 14px;
+    }
+}
+
+/* 🌟 Dark Mode Styles */
+.footer.dark-mode {
+    background-color: #121212;
+    color: #bbb;
+}
+
+.footer.dark-mode .footer-content-center ul li a {
+    color: #bbb;
+}
+
+.footer.dark-mode .footer-content-center ul li a:hover {
+    color: #ff4c24;
+}
+
+.footer.dark-mode .footer-content-right .whats-new {
+    background-color: #424242;
+}
